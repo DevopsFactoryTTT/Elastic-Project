@@ -9,4 +9,4 @@
       metricbeat.modules:
       - system
       - kafka
-        enabled: true
+      enabled: true
