@@ -1,0 +1,34 @@
+- hosts: all
+  tasks:
+  - name: Creating a file with content
+    copy:
+      dest: "/etc/systemd/system/logstash.service"
+      content: |
+        [Unit]
+        Description=logstash
+        
+        [Service]
+        Type=simple
+        ExecStart=/usr/local/logstash/bin/logstash -f /usr/local/logstash/config/logstash-kafka.conf
+        Restart=always
+        WorkingDirectory=/
+        Nice=19
+        LimitNOFILE=16384
+        TimeoutStopSec=infinity
+        
+        [Install]
+        WantedBy=multi-user.target
+  
+  - name: Enable and restart logstash.service
+    systemd:
+      name: logstash.service
+      daemon_reload: yes
+    
+  - name: Enable and restart logstash.service
+    systemd:
+      name: logstash.service
+      enabled: yes
+      state: started
+   
+   
+  
