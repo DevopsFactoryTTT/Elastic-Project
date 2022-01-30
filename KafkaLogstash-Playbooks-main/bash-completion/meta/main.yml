@@ -1,0 +1,26 @@
+---
+galaxy_info:
+  author: Giovanni Torres
+  description: Installs the bash-completion package.
+  license: license BSD
+  min_ansible_version: 2.0
+  platforms:
+    - name: Fedora
+      versions:
+        - 29
+    - name: EL
+      versions:
+        - 6
+        - 7
+    - name: Ubuntu
+      versions:
+        - trusty
+        - xenial
+    - name: Debian
+      versions:
+        - jessie
+        - stretch
+  galaxy_tags:
+    - system
+    - bash
+dependencies: []

@@ -1,0 +1,2 @@
+- pipeline.id: ttttest
+  path.config: "/home/dmaroju1/logstash-7.12.0/config/logstash-kafka.conf"

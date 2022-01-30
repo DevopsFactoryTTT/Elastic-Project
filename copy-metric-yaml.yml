@@ -1,0 +1,7 @@
+- hosts: LinuxServers
+  tasks:
+  - name: Ansible copy file force
+    copy:
+      src: metricbeat.yml
+      dest: /etc/metricbeat/metricbeat.yml 
+      force: yes

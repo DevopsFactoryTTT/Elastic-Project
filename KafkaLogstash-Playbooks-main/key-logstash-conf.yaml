@@ -1,0 +1,52 @@
+--- 
+- 
+  hosts: all
+  tasks: 
+    - 
+      copy: 
+        content: |
+            -----BEGIN CERTIFICATE-----
+            MIIDIzCCAgugAwIBAgIVAOn2uH5U3RkRLa6TDTO/GPa6c5joMA0GCSqGSIb3DQEB
+            CwUAMDQxMjAwBgNVBAMTKUVsYXN0aWMgQ2VydGlmaWNhdGUgVG9vbCBBdXRvZ2Vu
+            ZXJhdGVkIENBMB4XDTIxMDUyNDE0NTA1NFoXDTI0MDUyMzE0NTA1NFowEzERMA8G
+            A1UEAxMIaW5zdGFuY2UwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCW
+            6etwECGUnVpUIWvTErRM4Y+yrIlkbRs4sNeHjPvImziRHF4WJJMmfWGxaALhPB/O
+            xsiwGpJ2SYknfr+uU+oSlEKbsiV+HDllaxWeWQSQX8JuY4vE4+ZII3evYJg0n2vg
+            da2bFrVopLq6aje0e1OelpXvN/0wasyifK24gCHj5yF1dyr7O/xjm1zakyte7EU4
+            TFumgsJ9+JXS65XCKY/o6TGrqTmELJ9l62CZPf0v1IKPHRCvxK8SUkfSOSnlJQDD
+            FKniR595YeQH4DOH6K2kNeUC6biFmc9bKoG7qyAr5QeDWlwHQhHNA/8S9HIapFoO
+            59qUTWdZbyxqGKGa1QCxAgMBAAGjTTBLMB0GA1UdDgQWBBTDZAuVj81aruzkWMpC
+            n9AQkXlebjAfBgNVHSMEGDAWgBRJw/Xfn2ZgcIE/vkTpO/fvXBIbRjAJBgNVHRME
+            AjAAMA0GCSqGSIb3DQEBCwUAA4IBAQBx+h42Y/vk4ntm4aFtSnXMJiBKdwHehjHk
+            e3dvTLiv4UynzYIyAZYCftqQhqHYO8IoN3/2Ig5bwhIkf06JShI+5gC094WS+eKH
+            hN2uzSJjO821F5T7kmgtmJ+M9FjX26alpn9E22unX45pFhAkBpjIJgwFmfQP/bSS
+            VI9clDEa5NzoRVXXEitkUIoLqPkuK1TlP12nN6Llal4/FIh89EF9LM4BVm2TcoxX
+            jkq4qpzJuppfHWcAOLE9QeRkUa6Ye0NlmQQ3cC1upDAx575lXBX5xWCf37LPq1AM
+            XiFoJJUYM5Sh7wfXKPOsplYrKqk8uVDgaxcHyO5sCWRA4fJccWN8
+            -----END CERTIFICATE-----
+        dest: /usr/local/logstash/cert.crt
+      name: "Copy Crt"
+    - 
+      copy: 
+        content: |
+            input {
+              kafka
+                {
+                  bootstrap_servers => "localhost:9092"
+                  topics => "AAMSTOPIC"
+                  codec => json
+              }
+            }
+            output {
+              elasticsearch {
+                hosts => ["https://172.31.6.59:9200"]
+                index => "aams-rmi-%{+YYYY.ww}"
+                user => "elastic"
+                password => "1eyBgdV88kbFKDdzQyMs"
+                cacert => "/usr/local/logstash/cert.crt"
+                ssl => true
+                ssl_certificate_verification => false
+              }
+            }
+        dest: /usr/local/logstash/config/logstash-kafka.conf
+      name: "Creating a logstash conf"

@@ -1,0 +1,9 @@
+---
+- hosts: all
+  roles:
+    - role: '{{ playbook_dir }}'
+  tasks:
+    - command: /usr/local/logstash/bin/logstash --version
+      register: logstash_test_output
+    - debug:
+        msg: '{{ logstash_test_output.stdout }}'

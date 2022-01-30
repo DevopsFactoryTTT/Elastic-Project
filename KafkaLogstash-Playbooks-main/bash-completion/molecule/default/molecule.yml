@@ -1,0 +1,28 @@
+---
+dependency:
+  name: galaxy
+driver:
+  name: docker
+lint:
+  name: yamllint
+platforms:
+  - name: ansible-role-bash-completion-centos7
+    image: centos:7
+  - name: ansible-role-bash-completion-fedora29
+    image: fedora:29
+  - name: ansible-role-bash-completion-debian9
+    image: debian:9
+  - name: ansible-role-bash-completion-debian8
+    image: debian:8
+  - name: ansible-role-bash-completion-ubuntu-trusty
+    image: ubuntu:trusty
+  - name: ansible-role-bash-completion-ubuntu-xenial
+    image: ubuntu:xenial
+provisioner:
+  name: ansible
+  lint:
+    name: ansible-lint
+verifier:
+  name: testinfra
+  lint:
+    name: flake8

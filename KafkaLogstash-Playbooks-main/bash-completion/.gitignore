@@ -1,0 +1,8 @@
+__pycache__
+*.pyc
+.molecule
+.vagrant
+.cache
+._*
+pytestdebug.log
+*.swp

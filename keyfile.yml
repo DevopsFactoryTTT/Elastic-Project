@@ -1,0 +1,23 @@
+---
+- hosts: M
+  tasks:
+    - name: generate key pair
+      shell: ssh-keygen -b 2048 -t rsa -f /root/.ssh/id_rsa -q -N /dev/null
+      args:
+        creates: /root/.ssh/id_rsa 
+
+    - name: test public key
+      shell: ssh-keygen -l -f /root/.ssh/id_rsa.pub
+      changed_when: false
+
+    - name: retrieve public key
+      shell: cat /root/.ssh/id_rsa.pub
+      register: master_public_key
+      changed_when: false
+
+- hosts: SLAVES
+  tasks:
+    - name: add master public key to slaves
+      authorized_key:
+        user: root
+        key: "{{ hostvars['M'].master_public_key.stdout }}"
