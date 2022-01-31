@@ -5,6 +5,7 @@ pipeline {
       steps {
         sh 'ansible-playbook KafkaLogstash-Playbooks-main/Logstash.yml'
         sh 'ansible-playbook KafkaLogstash-Playbooks-main/key-logstash-conf.yaml'
+        sh 'ansible-playbook KafkaLogstash-Playbooks-main/logstash-service.yml'
       }
     }
   }
