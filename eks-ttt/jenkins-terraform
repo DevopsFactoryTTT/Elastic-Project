@@ -1,5 +1,8 @@
 pipeline {
   agent { label 'jenkins-ssh-slave' }
+  environment {
+    PATH = "${PATH}:${getTerraformPath()}"
+  }
   stages {
     stage('Hello') {
       steps {
@@ -8,3 +11,8 @@ pipeline {
       }
     }
   }
+}
+def getTerraformPath(){
+  def tfHome = tool name: 'terraform-12', type: 'org.jenkinsci.plugins.terraform.TerraformInstallation'
+  return tfHome
+}
