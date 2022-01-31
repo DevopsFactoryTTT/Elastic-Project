@@ -1,7 +1,7 @@
 dependencies:
 - role: bash-completion #aams.bash
   #version: v1.1.7
-- role: aams.unarchive-deps
+- role: ttt.unarchive-deps
   version: v1.2.0
 galaxy_info:
   author: Andrew Rothstein
