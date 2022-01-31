@@ -9,6 +9,7 @@
       skip: true
       paths:
         - '{{ role_path }}/vars'
+  ignore_errors: yes
 - name: checking for logstash installation in {{ logstash_install_dir }}
   become: yes
   stat:

@@ -1,8 +1,8 @@
 dependencies:
-- role: bash-completion #aams.bash
-  #version: v1.1.7
-- role: ttt.unarchive-deps
-  version: v1.2.0
+- role: aams.bash.updated
+  version: v1.1.8
+- role: aams.unarchive-deps.updated
+  version: v1.2.1
 galaxy_info:
   author: Andrew Rothstein
   company: BlackRock
@@ -20,17 +20,14 @@ galaxy_info:
     versions:
     - bullseye
     - buster
-    - stretch
   - name: EL
     versions:
-    - 7
     - 8
   - name: Fedora
     versions:
-    - 31
-    - 32
+    - 34
+    - 35
   - name: Ubuntu
     versions:
     - bionic
     - focal
-    - xenial
