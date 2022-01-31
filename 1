@@ -1,0 +1,41 @@
+# Please edit the object below. Lines beginning with a '#' will be ignored,
+# and an empty file will abort the edit. If an error occurs while saving this file will be
+# reopened with the relevant failures.
+#
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: "2022-01-31T12:12:37Z"
+  labels:
+    common.k8s.elastic.co/type: elasticsearch
+    elasticsearch.k8s.elastic.co/cluster-name: quickstart
+  name: quickstart-es-http
+  namespace: default
+  ownerReferences:
+  - apiVersion: elasticsearch.k8s.elastic.co/v1
+    blockOwnerDeletion: true
+    controller: true
+    kind: Elasticsearch
+    name: quickstart
+    uid: 259c8899-a0b0-4321-9b48-2949627e1d16
+  resourceVersion: "6420"
+  uid: ebff2fa3-52de-42f7-bb4f-5e5eca6bf0ea
+spec:
+  clusterIP: 172.20.152.210
+  clusterIPs:
+  - 172.20.152.210
+  ipFamilies:
+  - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+  - name: https
+    port: 9200
+    protocol: TCP
+    targetPort: 9200
+  selector:
+    common.k8s.elastic.co/type: elasticsearch
+    elasticsearch.k8s.elastic.co/cluster-name: quickstart
+  sessionAffinity: None
+  type: LoadBalancer
+status:
+  loadBalancer: {}
