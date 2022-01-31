@@ -3,5 +3,4 @@
   become: yes
   gather_facts: false
   roles:
-          #- role: aams.bash.updated
     - role: ttt.logstash

@@ -5,25 +5,7 @@
     - 
       copy: 
         content: |
-            -----BEGIN CERTIFICATE-----
-            MIIDIzCCAgugAwIBAgIVAOn2uH5U3RkRLa6TDTO/GPa6c5joMA0GCSqGSIb3DQEB
-            CwUAMDQxMjAwBgNVBAMTKUVsYXN0aWMgQ2VydGlmaWNhdGUgVG9vbCBBdXRvZ2Vu
-            ZXJhdGVkIENBMB4XDTIxMDUyNDE0NTA1NFoXDTI0MDUyMzE0NTA1NFowEzERMA8G
-            A1UEAxMIaW5zdGFuY2UwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCW
-            6etwECGUnVpUIWvTErRM4Y+yrIlkbRs4sNeHjPvImziRHF4WJJMmfWGxaALhPB/O
-            xsiwGpJ2SYknfr+uU+oSlEKbsiV+HDllaxWeWQSQX8JuY4vE4+ZII3evYJg0n2vg
-            da2bFrVopLq6aje0e1OelpXvN/0wasyifK24gCHj5yF1dyr7O/xjm1zakyte7EU4
-            TFumgsJ9+JXS65XCKY/o6TGrqTmELJ9l62CZPf0v1IKPHRCvxK8SUkfSOSnlJQDD
-            FKniR595YeQH4DOH6K2kNeUC6biFmc9bKoG7qyAr5QeDWlwHQhHNA/8S9HIapFoO
-            59qUTWdZbyxqGKGa1QCxAgMBAAGjTTBLMB0GA1UdDgQWBBTDZAuVj81aruzkWMpC
-            n9AQkXlebjAfBgNVHSMEGDAWgBRJw/Xfn2ZgcIE/vkTpO/fvXBIbRjAJBgNVHRME
-            AjAAMA0GCSqGSIb3DQEBCwUAA4IBAQBx+h42Y/vk4ntm4aFtSnXMJiBKdwHehjHk
-            e3dvTLiv4UynzYIyAZYCftqQhqHYO8IoN3/2Ig5bwhIkf06JShI+5gC094WS+eKH
-            hN2uzSJjO821F5T7kmgtmJ+M9FjX26alpn9E22unX45pFhAkBpjIJgwFmfQP/bSS
-            VI9clDEa5NzoRVXXEitkUIoLqPkuK1TlP12nN6Llal4/FIh89EF9LM4BVm2TcoxX
-            jkq4qpzJuppfHWcAOLE9QeRkUa6Ye0NlmQQ3cC1upDAx575lXBX5xWCf37LPq1AM
-            XiFoJJUYM5Sh7wfXKPOsplYrKqk8uVDgaxcHyO5sCWRA4fJccWN8
-            -----END CERTIFICATE-----
+        LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSURTakNDQWpLZ0F3SUJBZ0lSQU41cS9XZnQ5VENRRWdHcW9uYUFwLzh3RFFZSktvWklodmNOQVFFTEJRQXcKTHpFVE1CRUdBMVVFQ3hNS2NYVnBZMnR6ZEdGeWRERVlNQllHQTFVRUF4TVBjWFZwWTJ0emRHRnlkQzFvZEhSdwpNQjRYRFRJeU1ERXpNVEV5TURJek4xb1hEVEl6TURFek1URXlNVEl6TjFvd0x6RVRNQkVHQTFVRUN4TUtjWFZwClkydHpkR0Z5ZERFWU1CWUdBMVVFQXhNUGNYVnBZMnR6ZEdGeWRDMW9kSFJ3TUlJQklqQU5CZ2txaGtpRzl3MEIKQVFFRkFBT0NBUThBTUlJQkNnS0NBUUVBNDF3ZjE5VnJkUnRBUE1RbHRmUHNQYnVxMXRiaWdNMW5qL0w3RVJCLwpDM09pS3dnUW9vUmVjcW4wRWJ3ZEE2NkRGNFJTNlVzNnhjdHFqYXFzNzRtVTVnRHBnSkZ2WWxPUkR6YzJ1UU0vCnpQTm9LNXQraUQwUmZMK0pHQksrbFJyeDAzTUtFYnM5UElmb09UYWVZY1I0U1F4Wi9EdElsQ1NhKzlFQjBOcmwKaEhGN09yaTFvSjFJczYrRi8rZFk3R3BtOFpjOC9QNnBYaXJrUmdYT2N1M2RCSHdmcy9mazZzUnZOMUpJZXJIZQpIaVBCblN0VkFxVGVrS3VYQ3JzNE9wejF6VU1JRm10K09YSDJMWG9oOVRWMkpuTWZyNVZIMjVMWE9qK294dWx4ClBKZG4zVFhoRDlkaTNmTWlzeUNlWDZaM29NQkhuU1FzWmpzSFB3aHIzVDlQMlFJREFRQUJvMkV3WHpBT0JnTlYKSFE4QkFmOEVCQU1DQW9Rd0hRWURWUjBsQkJZd0ZBWUlLd1lCQlFVSEF3RUdDQ3NHQVFVRkJ3TUNNQThHQTFVZApFd0VCL3dRRk1BTUJBZjh3SFFZRFZSME9CQllFRkpTUDBJMlVZYzhOaXBpR1dHbEZYOG1qZjlTb01BMEdDU3FHClNJYjNEUUVCQ3dVQUE0SUJBUURGRWd5N05DY1pkZkRaR2ZwZXFoUUN1djhVVm0vdjFTNGMza0xMQXUrNzlZWWwKOE5OOXc0ZUlzQlprZDdjNHhUVnp3UmtOSnJZbmIzQ2V3eTMvRlRuZjRnclNXWFE2ZTVhbnlabkFsVk9CWEhmTQo1bUFBQkR2NWRUUGc0NlprNHZXUUxUZHRzaG1jbkg2QjM0ZGdGb0p1VUIza3VaN2RtZlh6TkJpNjBGUjIwbkZqCkU4TkQ1dXZUMWZJc24wbTN1RHU1Wm90YjhWZlVRWGNTRzhtN1laL1BlZDJ5NWZSSGczMzlOWm5VaStlWFJRRlgKRCtZL2JlZG9kdllJQWJwemhCdGVXcHpJL0lyRXo4QzRpTXlEWDlLTDBqU2IrcGl0OVQ2ajlWR2JzeXJkOGJRVQpVaFpzVWpjRW0rbXdHcUV3cGJnZWJJblI5Y25HZkdPYlg4YUlDZFUwCi0tLS0tRU5EIENFUlRJRklDQVRFLS0tLS0K
         dest: /usr/local/logstash/cert.crt
       name: "Copy Crt"
     - 
@@ -32,17 +14,17 @@
             input {
               kafka
                 {
-                  bootstrap_servers => "localhost:9092"
-                  topics => "AAMSTOPIC"
+                  bootstrap_servers => "103.160.107.176:9092"
+                  topics => "TTTMBTOPIC"
                   codec => json
               }
             }
             output {
               elasticsearch {
-                hosts => ["https://172.31.6.59:9200"]
-                index => "aams-rmi-%{+YYYY.ww}"
+                hosts => ["https://aebff2fa352de42f7bb4f5e5eca6bf0e-1147608912.ap-south-1.elb.amazonaws.com:9200"]
+                index => "ttt-mb-%{+YYYY.ww}"
                 user => "elastic"
-                password => "1eyBgdV88kbFKDdzQyMs"
+                password => "m2432egugkB4n5T1SM5KYo23"
                 cacert => "/usr/local/logstash/cert.crt"
                 ssl => true
                 ssl_certificate_verification => false
