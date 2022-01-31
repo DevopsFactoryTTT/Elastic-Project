@@ -1,0 +1,33 @@
+dependencies:
+- role: aams.bash.updated
+  version: v1.1.8
+- role: aams.unarchive-deps.updated
+  version: v1.2.1
+galaxy_info:
+  author: Andrew Rothstein
+  company: BlackRock
+  description: logstash
+  galaxy_tags:
+  - logaggregation
+  license:
+  - MIT
+  min_ansible_version: 2.0
+  platforms:
+  - name: Archlinux
+    versions:
+    - all
+  - name: Debian
+    versions:
+    - bullseye
+    - buster
+  - name: EL
+    versions:
+    - 8
+  - name: Fedora
+    versions:
+    - 34
+    - 35
+  - name: Ubuntu
+    versions:
+    - bionic
+    - focal
