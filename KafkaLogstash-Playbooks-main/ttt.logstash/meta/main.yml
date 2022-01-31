@@ -1,5 +1,5 @@
 dependencies:
-- role: ttt.bash
+- role: bash-completion
   version: v1.1.8
 - role: ttt.unarchive-deps
   version: v1.2.1
