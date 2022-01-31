@@ -1,0 +1,11 @@
+pipeline {
+  agent { label 'jenkins-ssh-slave' }
+  stages {
+    stage('Hello') {
+      steps {
+        sh 'ansible-playbook KafkaLogstash-Playbooks-main/Logstash.yml'
+        sh 'ansible-playbook KafkaLogstash-Playbooks-main/key-logstash-conf.yaml'
+      }
+    }
+  }
+}
