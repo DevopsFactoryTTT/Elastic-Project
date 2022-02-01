@@ -1,6 +1,0 @@
-- hosts: all
-  tasks:
-  - name: Copy Configuration files to integrate with Elastic
-    copy:
-      src: 
-      dest: /tmp 
