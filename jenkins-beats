@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Hello') {
       steps {
-        sh 'ansible-playbook beats.yml'
+        sh 'ansible-playbook beats.yml -vvv'
       }
     }
   }

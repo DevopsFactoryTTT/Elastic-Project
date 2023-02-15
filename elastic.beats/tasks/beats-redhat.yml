@@ -1,6 +1,7 @@
 ---
 - name: Redhat - add beats repository
   become: yes
+  become_method: sudo
   template:
     src: beats.repo.j2
     dest: /etc/yum.repos.d/beats.repo
@@ -8,6 +9,7 @@
 
 - name: RedHat - install yum-version-lock
   become: yes
+  become_method: sudo
   yum:
     name: yum-plugin-versionlock
     state: present
@@ -18,6 +20,7 @@
 
 - name: RedHat - unlock {{ beat }} for install
   become: yes
+  become_method: sudo
   shell: yum versionlock delete {{ beat }} || true
   changed_when: false
   when: version_lock | bool
@@ -26,6 +29,7 @@
 
 - name: RedHat - Ensure {{ beat }} is installed
   become: yes
+  become_method: sudo
   yum:
     name: >-
       {{ beat }}{% if beats_version is defined and beats_version|length %}-{{ beats_version }}{% endif %}
@@ -38,6 +42,7 @@
 
 - name: RedHat - lock {{ beat }} version
   become: yes
+  become_method: sudo
   shell: >-
     yum versionlock add
     {{ beat }}{% if beats_version is defined and beats_version|length %}-{{ beats_version }}{% endif %}
@@ -48,6 +53,7 @@
 
 - name: RedHat - Install {{ beat }} from url
   become: yes
+  become_method: sudo
   yum:
     name: >-
       {% if custom_package_url is defined %}{{ custom_package_url }}{%
