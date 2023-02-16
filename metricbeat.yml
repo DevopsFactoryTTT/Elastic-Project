@@ -189,5 +189,5 @@ processors:
 
 
 output.kafka:
-  hosts: ["172.31.42.84:9092"]
+  hosts: ["172.31.7.24:9092"]
   topic: TTTMBTOPIC
