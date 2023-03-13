@@ -6,31 +6,31 @@
       copy: 
         content: |
           -----BEGIN CERTIFICATE-----
-          MIIEljCCA36gAwIBAgIRAKeTJZF0R+0oAxxtZi2i/LwwDQYJKoZIhvcNAQELBQAw
-          LzETMBEGA1UECxMKcXVpY2tzdGFydDEYMBYGA1UEAxMPcXVpY2tzdGFydC1odHRw
-          MB4XDTIzMDMwMjA4NDU1NVoXDTI0MDMwMTA4NTU1NVowQzETMBEGA1UECxMKcXVp
-          Y2tzdGFydDEsMCoGA1UEAxMjcXVpY2tzdGFydC1lcy1odHRwLmRlZmF1bHQuZXMu
-          bG9jYWwwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC4JytglWVIcQY2
-          DIdEc2mhz5eqn5z6l4qkf0vDQfR6NvN/C4Fz4OEiPuWVhQ6/2dqBp6Y1QsPNMWgY
-          59MdDZ9uMfDVtEVOJLZbGA1tcUCxA/OxS26n7Ah/XhPw37GZfvdfBknx3CMWTK8x
-          w8w7SdrWkxH6Mww0v4cR2LHteGIDLJtTxzpoy7cpRVb/fEM4jUwLtJ03pavinmq6
-          2FqttXtQOM0xDkDnW8s236Aiiq4fGNCd/BMCwHfhfooCoO9BzVyGky/SVbJJDZQN
-          e2jE3j3pTjoysEN60uUEGArjJRdqDRj8R9JQ50KdTuS/5sR7cbaUJPyW3h0Du7So
-          wcsMuC2jAgMBAAGjggGXMIIBkzAOBgNVHQ8BAf8EBAMCBaAwHQYDVR0lBBYwFAYI
-          KwYBBQUHAwEGCCsGAQUFBwMCMB8GA1UdIwQYMBaAFOOn7BWMsiZh+Q5KOIC3qdmB
-          6cgRMIIBPwYDVR0RBIIBNjCCATKCI3F1aWNrc3RhcnQtZXMtaHR0cC5kZWZhdWx0
-          LmVzLmxvY2FsghJxdWlja3N0YXJ0LWVzLWh0dHCCHnF1aWNrc3RhcnQtZXMtaHR0
-          cC5kZWZhdWx0LnN2Y4IacXVpY2tzdGFydC1lcy1odHRwLmRlZmF1bHSCSGE0YTgz
-          YmY1NmUyMzQ0MWJlOWIxNWEzN2QzZDZkM2Y1LTEyMzIzMDE4MDIuYXAtc291dGgt
-          MS5lbGIuYW1hem9uYXdzLmNvbYIncXVpY2tzdGFydC1lcy1pbnRlcm5hbC1odHRw
-          LmRlZmF1bHQuc3ZjgiNxdWlja3N0YXJ0LWVzLWludGVybmFsLWh0dHAuZGVmYXVs
-          dIIjKi5xdWlja3N0YXJ0LWVzLWRlZmF1bHQuZGVmYXVsdC5zdmMwDQYJKoZIhvcN
-          AQELBQADggEBAFt026h9Yt4JrOskCstypiYgfcy5BAcQUeL2twoEX2usSZ4XWYwW
-          dicm06+N9t5gLHHHY7OHxhuoaPa0r1djJfPSB0Hm2D1CQQf5zYAL+bNT747DOTDn
-          HAzSAdh4vllp6qlqHZK8j9G3ujF1xjdhVebDeyv1qWqcVZ8kh0oTdL1Zkq3SxU42
-          b4pDX6Sy6VXcxjiX7Uo0si0lIuLKjPdda1B2GzWPbZpKLjJLn35P30MVGlRPoKet
-          ZqKiD/K6A/zlVa8tqIdXpzp7XMLpYvylwuLJd2ctxFBo3Ga0E4wUQL1x46CEeO+4
-          O/DeJ79vL7DLfIuIAmHwRZXilschKMCdt7k=
+          MIIElTCCA32gAwIBAgIQTUi1qUv5s7vPBfxN1Ykb/zANBgkqhkiG9w0BAQsFADAv
+          MRMwEQYDVQQLEwpxdWlja3N0YXJ0MRgwFgYDVQQDEw9xdWlja3N0YXJ0LWh0dHAw
+          HhcNMjMwMzEzMDUwMDQwWhcNMjQwMzEyMDUxMDQwWjBDMRMwEQYDVQQLEwpxdWlj
+          a3N0YXJ0MSwwKgYDVQQDEyNxdWlja3N0YXJ0LWVzLWh0dHAuZGVmYXVsdC5lcy5s
+          b2NhbDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAJiZs4YCYKyFdPqS
+          CjM5Cu3a/HJthBR2Owtwr8RG8DMmcDjVFBmvYdVDtGaTdY+JstnpmPAkDRcT55zn
+          lenOXrc1MctotXdR4dMm+LKWH1roY+3ToVWFhHFjiS43CjHEKBQssE/itHTnRUn1
+          cwNF4m+OAvjEt5lpegFxfclPZ8DVS4+lt87PbDIoS8BJi1P6+3gEzmsgjoXmHE0e
+          ndDpCiSEDCuN/reBilm7aqfS/mX3tcNN0hvd1uR4Qty6QL4cBjBpO5fDdivLK5bD
+          LbnnLZTVjeP14NiG1sats/Sb/J6ZSdBmS1sFIzU+pGdpzKqgKQhfwUQuYyrEv57L
+          lVlM2CkCAwEAAaOCAZcwggGTMA4GA1UdDwEB/wQEAwIFoDAdBgNVHSUEFjAUBggr
+          BgEFBQcDAQYIKwYBBQUHAwIwHwYDVR0jBBgwFoAUX92nK2L7Zt4lwpVZlYc/VRuY
+          MK8wggE/BgNVHREEggE2MIIBMoIjcXVpY2tzdGFydC1lcy1odHRwLmRlZmF1bHQu
+          ZXMubG9jYWyCEnF1aWNrc3RhcnQtZXMtaHR0cIIecXVpY2tzdGFydC1lcy1odHRw
+          LmRlZmF1bHQuc3ZjghpxdWlja3N0YXJ0LWVzLWh0dHAuZGVmYXVsdIJIYTNlMmI1
+          MmU4MjgyNDRkNTQ5YjQwYjI1NjIwMTIxODMtMTM0NDY1OTM0MS5hcC1zb3V0aC0x
+          LmVsYi5hbWF6b25hd3MuY29tgidxdWlja3N0YXJ0LWVzLWludGVybmFsLWh0dHAu
+          ZGVmYXVsdC5zdmOCI3F1aWNrc3RhcnQtZXMtaW50ZXJuYWwtaHR0cC5kZWZhdWx0
+          giMqLnF1aWNrc3RhcnQtZXMtZGVmYXVsdC5kZWZhdWx0LnN2YzANBgkqhkiG9w0B
+          AQsFAAOCAQEAnAU9R19wKyaX2q6Al7BubI74n7ZnDDan2uaT7tGPa3JrOrdSWzbs
+          ZpiBtFONaO2RX8kAv4djjVJJuSSo3Sku2hvq+ZKJWQ8bxkLUj1ahnNBjI5k0+dOC
+          /THInt/EPB4wZ5ZoNOVJSY6f/Q/F8HIIB4M2w3DnCzCw+Bx6zrqcHcwahd7YSD9I
+          CXQ/bxsmRC1csDMFsCisfhD05ucErIDiKWOYkpQNxmcx2OGUko4fYPUp/omVMu7v
+          BR2NNPMSngYxD7uGTpX+I+Gzi4m7xGWsS6ZTzfc0UgeGQgdHDZv+nFusZt7xPJ3/
+          gtG+5x5fVrUs58sFNQF/sX5XEtGn18Zxsw==
           -----END CERTIFICATE-----
 
         dest: /usr/local/logstash/cert.crt
@@ -41,17 +41,17 @@
             input {
               kafka
                 {
-                  bootstrap_servers => "172.31.7.24:9092"
+                  bootstrap_servers => "172.31.33.167:9092"
                   topics => "TTTMBTOPIC"
                   codec => json
               }
             }
             output {
               elasticsearch {
-                hosts => ["https://a4a83bf56e23441be9b15a37d3d6d3f5-1232301802.ap-south-1.elb.amazonaws.com:9200"]
-                index => "ttt-mb-%{+YYYY.ww}"
+                hosts => ["https://a3e2b52e828244d549b40b2562012183-1344659341.ap-south-1.elb.amazonaws.com:9200"]
+                index => "ttt-sg-%{+YYYY.ww}"
                 user => "elastic"
-                password => "J88106Sba7t4oWV2nSL1X6rr"
+                password => "5RYP0hE54h5Ul41z1sb5WU6K"
                 cacert => "/usr/local/logstash/cert.crt"
                 ssl => true
                 ssl_certificate_verification => false
