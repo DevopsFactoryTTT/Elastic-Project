@@ -42,7 +42,7 @@
               kafka
                 {
                   bootstrap_servers => "172.31.33.167:9092"
-                  topics => "TTTMBTOPIC"
+                  topics => "TTTSGTOPIC"
                   codec => json
               }
             }
