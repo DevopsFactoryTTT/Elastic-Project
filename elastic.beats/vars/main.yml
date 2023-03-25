@@ -1,5 +1,6 @@
 ---
 # vars file for beats
 
-beats_package_url: "https://download.elastic.co/beats"
+beats_package_url: "https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-8.6.1-x86_64.rpm"
 elastic_repo_key: "https://packages.elastic.co/GPG-KEY-elasticsearch"
+

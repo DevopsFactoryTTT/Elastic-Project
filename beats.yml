@@ -1,9 +1,9 @@
 - name: Elastic Beats Installation
-  hosts: LinuxServers
+  hosts: all
   roles: 
     - elastic.beats
   vars:
-    beats_version: 7.16.3
+    beats_version: 8.6.1
     beat: metricbeat
     beat_conf:
       metricbeat.modules:

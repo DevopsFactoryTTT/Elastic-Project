@@ -26,7 +26,7 @@ resource "aws_launch_configuration" "ttt" {
   associate_public_ip_address = true
   iam_instance_profile = aws_iam_instance_profile.ttt-node.name
   image_id = data.aws_ami.eks-worker.id
-  instance_type = "t2.large"
+  instance_type = "t2.small"
   name_prefix = "terraform-eks-ttt"
   security_groups = [aws_security_group.ttt-node.id]
   user_data_base64 = base64encode(local.ttt-node-userdata)
